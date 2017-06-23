@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>reveal.js – The HTML Presentation Framework</title>
+
+<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+<meta name="author" content="Hakim El Hattab">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/reveal.css">
+<link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/css/theme/black.css" id="theme">
+
+<!-- Theme used for syntax highlighting of code -->
+<link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/lib/css/zenburn.css">
+
+<!-- Printing and PDF exports -->
+<script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cad-lab.github.io/cadlab_data/reveal/css/print/pdf.css' : 'https://cad-lab.github.io/cadlab_data/reveal/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+
+<!--[if lt IE 9]>
+<script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/html5shiv.js"></script>
+<![endif]-->
+	
+</head>
+
+<body>
+<div class="reveal">
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+        <section>
+            <h1>第二組 </h1>
+		<h1>40523146簡報</h1>
+            
+             <p> <small>
+                 by 第二組
+			</small></p>           
+        </section>
+	
+        	
+        <section>
+            <h2>我學到的東西</h2>
+            <p> 1.什麼是CMSimpfly?</p>
+            <p> 2.自製網路線RJ45</p>
+            <p> 3.說明如何利用 start.bat 啟動隨身程式系統</p>
+	    <p> 4.如何運用start.bat啟動Fossil SCM</p>
+            <p> 5.如何修改start.bat的啟動錯誤</p> 
+            <p>6.下載ubuntu visualbox的相關設定 建立ndinx server</p>
+	    <p>7.組裝電腦</p>
+ 
+        </section>
+
+
+        					
+        <!-- Example of nested vertical slides -->
+        <section>
+
+            <section>
+                    <h2>什麼是CMSimpfly? </h2>
+                    <p>CMSimpfly是一個可以讓設計者整理資料的內容管理系統</p>
+                    <p>說明CMSimpfly的程式架構以及如何修改標題.上傳影片.圖片.新增分頁</p>
+                    <br>
+                   
+            </section>
+	
+          
+        </section>
+
+        						
+        <section>
+            <h2>用fossil指令推影片至遠端</h2>
+            <p>fossil clone http:......(網址)</p>
+             <p>fossil open ./../(上一個目錄)mde2a2.fossil</p>
+		 <p>丟影片到tmp mde2a2 wd</p>
+             <p>fossil add</p>
+             <p>fossil commit "-m"</p>
+	     <p>fossil remote-url off</p>
+	     <p>fossil push</p>
+        </section>
+	
+	<section>
+             </p>自製網路線</p>
+	 <p>◆製作步驟</p>
+1. 先將網路線剝開
+2. 按照網路線色對規則排好順序
+3. 將線對整理好並剪齊 (約 1.5 公分)
+4. 插入 RJ-45 接頭以壓線鉗壓製即可完成 (務必將線對插到底，以免造成傳輸品質不良) </p>
+	<p>◆網路線色對規則
+1. 一般傳輸用網路線色對規則 (兩端的網路頭皆為以下接法)
+白橙、橙、白綠、藍、白藍、綠、白棕、棕</p>
+                   </section>
+	<section>
+            </p> ◆RJ-45 跳線 (CrossOver) 說明</p>
+	 <p>◆製作步驟</p>
+跳線原理就是要把 A電腦的發送端傳輸到 B電腦的接收端 (送收對調)，如此才可以送收資料，因此要跳線
+備註：HUB會替你把不同電腦的發送和接收對接，所以透過 HUB就不要跳線
+<p>一頭 = 白橙、橙、白綠、藍、白藍、綠、白棕、棕</p>
+<p>另一頭 = 白綠、綠、白橙、藍、白藍、橙、白棕、棕</p>
+                  </section>
+        <section>
+          </p>visual box建立虛擬主機的相關設定</p>
+            <p>viual box-新增-名稱(ub)64位元-開啟下載的ubuntu</p>
+            <p>設定-網路-橋接-啟動-建立 NGINX SERVER</p>
+            <p>iconfigstudo apt install nginx studo dpkg config-a- studo apt installx</p>
+            <p>sudo apt get install-f</p>
+            <p>sudo vim/etc/apt/apt.conf</p>
+            <p>sudo apt update</p>
+         </section>
+ <script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/head.min.js"></script>
+        <script src="https://cad-lab.github.io/cadlab_data/reveal/js/reveal.js"></script>
+        <script>
+                // More info https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+                    center: true,
+        
+                    transition: 'slide', // none/fade/slide/convex/concave/zoom
+        
+                    // More info https://github.com/hakimel/reveal.js#dependencies
+                    dependencies: [
+                        { src: 'https://cad-lab.github.io/cadlab_data/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                        { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/zoom-js/zoom.js', async: true },
+                        { src: 'https://cad-lab.github.io/cadlab_data/reveal/plugin/notes/notes.js', async: true }
+                    ]
+                });
+        </script>
+        			
+</div>
+
+</div>
+
+</body>
+</html>
